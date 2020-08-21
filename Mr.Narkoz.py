@@ -47,13 +47,12 @@ def jalan(z):
 
 
 ##### LOGO #####
-logo = """ ▄︻┻═┳一 ЩєLc๏Mє ┼๏ ┼ђє Fąş┼єş┼ єVєr cL๏ЙIЙG
+logo = """ ▄︻┻═┳一 Şimdiye Kadarki En Hızlı Klonlamaya Hoş Geldiniz
            ▄︻┻═┳一 ♥️Mr.Narkoz-๏FFIcIąL♥️----------🔴
-           ▄︻┻═┳一 ♥️♥️ Mr.Narkoz- cL๏Йєr  ♥️♥️----🔴🔴
-           ▄︻┻═┳一    💪💪PAPPU-BACHA💪💪   🔴🔴
-           ▄︻┻═┳一 ---- FєєL ┼ђє P๏Щєr   --------🔴🔴
-	          ЩєLc๏Mє ┼๏ ЦЙLIMI┼єđ cL๏ЙIЙG
-
+           ▄︻┻═┳一 ♥️♥️ Mr.Narkoz-♥️♥️----🔴🔴
+          
+           ▄︻┻═┳一 -------💪Gücü Hisset💪--------🔴🔴
+	          Sınırsız Klonlamaya Hoş Geldiniz
 
 ███╗░░░███╗██████╗░
 ████╗░████║██╔══██╗
@@ -83,10 +82,10 @@ logo = """ ▄︻┻═┳一 ЩєLc๏Mє ┼๏ ┼ђє Fąş┼єş┼ єVєr
                      ▇▇▇◣╲▇╱◢▇▇▇
                      ▇▇▇▇◣▇◢▇▇▇▇
 
-        ђ๏Pє Y๏Ц MąY Gє┼ ๏Ц┼ЙЦMßєrєđ ącc๏ЦЙ┼ş 
-       P๏şşIßLY şYЙcђr๏ЙI乙єđ ßY ┼ђIş GI┼ђЦß . 
-          ♥️♥️♥️ ßєş┼ ๏F LЦcK  ♥️♥️♥️
-      ♥️♥️ rąM乙ąЙ MЦßąrąK ┼๏ єVєrY ß๏đY  ♥️♥️
+            Umarım sayısız hesaplar alırsın
+     Muhtemelen Bu Github ile senkronize edilmiştir. 
+               ♥️♥️♥️ İyi şanslar ♥️♥️♥️
+                
 \033[1;91m=======================================
 \033[1;96mAuthor  \033[1;93m: \033[1;92m Mr.Narkoz
 \033[1;96mInstagram \033[1;93m: \033[1: Baran.tr_06
@@ -96,7 +95,7 @@ logo = """ ▄︻┻═┳一 ЩєLc๏Mє ┼๏ ┼ђє Fąş┼єş┼ єVєr
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;96m[●] \x1b[1;93mSedang masuk \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;96m[●] \x1b[1;93mGiriş Yapıldı\x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 
 
 back = 0
@@ -147,17 +146,17 @@ CorrectPassword = "Baran"
 
 loop = 'true'
 while (loop == 'true'):
-    username = raw_input("\033[1;96m[☆] \x1b[1;93mUsername Of Tool \x1b[1;96m>>>> ")
+    username = raw_input("\033[1;96m[☆] \x1b[1;93mAracın Kullanıcı Adı\x1b[1;96m>>>> ")
     if (username == CorrectUsername):
-    	password = raw_input("\033[1;96m[☆] \x1b[1;93mPassword Of Tool \x1b[1;96m>>>> ")
+    	password = raw_input("\033[1;96m[☆] \x1b[1;93mAracın Şifresi\x1b[1;96m>>>> ")
         if (password == CorrectPassword):
-            print "Logged in successfully as " + username
+            print "Olarak Başarıyla Giriş Yaptın " + username
             loop = 'false'
         else:
-            print "Wrong Password"
+            print "Yanlış Şifre"
             os.system('xdg-open https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ ')
     else:
-        print "Wrong Username"
+        print "Yanlış Kullanıcı Adı"
         os.system('xdg-open  https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ ')
 
 def login():
@@ -169,14 +168,14 @@ def login():
 		os.system('clear')
 		print logo
 		print 42*"\033[1;96m="
-		print('\033[1;96m[☆] \x1b[1;93mLOGIN WITH FACEBOOK \x1b[1;96m[☆]' )
+		print('\033[1;96m[☆] \x1b[1;93mFACEBOOK İLE GİRİŞ YAP\x1b[1;96m[☆]' )
 		id = raw_input('\033[1;96m[+] \x1b[1;93mID/Email \x1b[1;91m: \x1b[1;92m')
-		pwd = raw_input('\033[1;96m[+] \x1b[1;93mPassword \x1b[1;91m: \x1b[1;92m')
+		pwd = raw_input('\033[1;96m[+] \x1b[1;93mŞifre \x1b[1;91m: \x1b[1;92m')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
 		except mechanize.URLError:
-			print"\n\033[1;96m[!] \x1b[1;91mThere is no internet connection"
+			print"\n\033[1;96m[!] \x1b[1;91mİnternet bağlantısı yok"
 			keluar()
 		br._factory.is_html = True
 		br.select_form(nr=0)
