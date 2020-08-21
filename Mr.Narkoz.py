@@ -174,7 +174,7 @@ def login():
 		try:
 			br.open('https://m.facebook.com')
 		except mechanize.URLError:
-			print"\n\033[1;96m[!] \x1b[1;91mİnternet bağlantısı yok"
+			print"\n\033[1;96m[!] \x1b[1;91mİnternet bağlantısı yok")
 			keluar()
 		br._factory.is_html = True
 		br.select_form(nr=0)
@@ -238,7 +238,7 @@ def menu():
 		time.sleep(1)
 		login()
 	except requests.exceptions.ConnectionError:
-		print"\033[1;96m[!] \x1b[1;91mThere is no internet connection"
+		print"\033[1;96m[!] \x1b[1;91mThere is no internet connection")
 		keluar()
 	os.system("clear")
 	print logo
