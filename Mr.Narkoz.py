@@ -154,11 +154,10 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print "Yanlış Şifre"
-            os.system('xdg-open https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ ')
+            
     else:
         print "Yanlış Kullanıcı Adı"
-        os.system('xdg-open  https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ ')
-
+    
 def login():
 	os.system('clear')
 	try:
@@ -210,7 +209,8 @@ def login():
 			time.sleep(1)
 			keluar()
 		else:
-			print("\n\033[1;96m[!] \x1b[1;91mPassword/Email is wrong")
+			print("\n\033[1;96m[!] \x1b[1;91mŞifre/E-Mail Yanlıs
+")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			login()
@@ -342,7 +342,7 @@ def pilih_super():
 	for o in titik:
 		print("\r\033[1;96m[\033[1;97m✸\033[1;96m] \033[1;93mCracking \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print
-	print('\x1b[1;96m[!] \x1b[1;93mTo Stop Process Press CTRL Then Press z')
+	print('\x1b[1;96m[!] \x1b[1;93mÇıkmak Istiyorsanız CTRL Basıp ondan sonra Zye Basın z...')
 	print 42*"\033[1;96m="
 	
 			
